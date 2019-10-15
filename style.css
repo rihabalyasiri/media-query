@@ -1,0 +1,198 @@
+/**********  Basics  ***************/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    letter-spacing: .5px;
+    line-height: 1.7;
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+ul {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/************  Main Section   **********/
+
+.main-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/********** left section  ********/
+
+.main-left {
+    flex: 50%;
+    width:50%;
+    min-width: 550px;
+    padding-bottom: 35vh;
+}
+
+.left-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:60%;
+    height: 50vh;
+    padding-left: 80px;
+}
+
+.logo {
+font-size: 1.5rem;
+padding: 10px 30px;
+
+}
+
+.heading {
+    font-size: 4rem;
+    margin-bottom: 30px;
+}
+
+.paragraph {
+    font-size: 2.5rem;
+    color:rgb(95, 95, 95);
+}
+
+
+/***********  right section  ***********/
+
+.main-right {
+    flex:50%;
+    background: url(https://www.wright20.com/items/index/2000/104_2_dieter_rams_the_jf_chen_collection_july_2018_artur_braun_and_fritz_eichler_sk_25_radio__wright_auction.jpg?t=1536592304) center/cover;
+    width:50%;
+    padding-bottom: 40vh;
+}
+
+.number {
+    font-size: 3rem;
+    padding: 10px 30px;
+}
+
+.number-hell {
+    font-size: 2rem;
+    color: rgb(158, 158, 158);
+}
+
+/*************  Footer  ***********/
+
+footer {
+    background: rgb(243,243,243);
+    width:100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+
+}
+
+.arrow-left, .arrow-right {
+    font-size: 2rem;
+    padding: 30px;
+}
+
+.arrow-right {
+    color: white;
+    background: #000;
+}
+
+
+
+/**********  Footer left  *********/
+
+.footer-left {
+    flex:50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social {
+    margin-left: 30px;
+    width:100px;
+    height: 10vh;
+}
+
+.social-flex {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.fa-facebook-f, .fa-twitter {
+    color:black;
+    font-size: 1.5rem;
+    /* margin-left: 15px; */
+}
+
+
+/*********  Footer right  **********/
+
+.footer-right {
+    flex: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-container {
+    margin-right: 40px;
+}
+
+.right-heading {
+    font-size: 2rem;
+}
+
+.right-paragraph {
+    font-size: 1rem;
+    color:rgb(116, 116, 116);
+}
+
+/***********  media query  ***********/
+
+@media only screen and (max-width:1800px) {
+   
+    .left-block {
+        width:80%;
+    }
+
+}
+
+@media only screen and (max-width:1000px) {
+    * {
+        font-size: 55%;
+    }
+    .left-block {
+        width:90%;
+    }
+
+}
+
+@media only screen and (max-width:500px) {
+   
+    .left-block {
+        width:90%;
+        padding-left: 20px;
+    }
+
+    .text-container {
+        margin-right: 10px;
+        margin-top: 30px;
+    }
+    .main-left {
+        padding-bottom: 10vh;
+    }
+
+}
